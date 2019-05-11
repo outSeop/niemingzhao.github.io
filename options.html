@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>七牛云图床 | 配置项</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="center-block" style="width: 50%;">
+    <header>
+      <h1>七牛云图床 <small>配置</small></h1>
+      <p>请确保按照要求填写正确的内容</p>
+    </header>
+    <form>
+      <div class="form-group">
+        <label for="ak">AK</label>
+        <input type="text" id="ak" name="ak" class="form-control">
+        <span class="help-block">访问 <a href="https://portal.qiniu.com/user/key" target="_blank">密钥管理</a> 获取 AK 和 SK
+          。</span>
+      </div>
+      <div class="form-group">
+        <label for="sk">SK</label>
+        <input type="text" id="sk" name="sk" class="form-control">
+        <span class="help-block">访问 <a href="https://portal.qiniu.com/user/key" target="_blank">密钥管理</a> 获取 AK 和 SK
+          。</span>
+      </div>
+      <div class="form-group">
+        <label for="bucket">Bucket</label>
+        <input type="text" id="bucket" name="bucket" class="form-control">
+        <span class="help-block">设置上传的 Bucket 。</span>
+      </div>
+      <div class="form-group">
+        <label for="domain">域名</label>
+        <input type="text" id="domain" name="domain" class="form-control">
+        <span class="help-block">在 <a href="https://portal.qiniu.com/create" target="_blank">控制台</a>
+          的对象存储中可以看到域名。</span>
+      </div>
+      <button type="button" id="save" class="btn btn-default">保存</button>
+    </form>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/options.js"></script>
+</body>
+
+</html>
